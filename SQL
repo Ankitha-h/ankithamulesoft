@@ -1,0 +1,11 @@
+Create database mulesoft;
+Use mulesoft;
+Create table movie(mov_name varchar(100) primary key,actor varchar(100),actress varchar(100),year_of_release int,dir-name varchar(100));
+Insert into  movie(mov_name, actor, actress, year_of_release, dir_name) Values ('Avengers:Endgame','Chris Evans','Scarlett Johansson',2019,'Anthony Russo');
+Insert into movie(mov_name, actor, actress, year_of_release, dir_name) Values ('Joker','Joaquin Phoenix','Zazie Beetz' ,2019,'Todd Phillips');
+Insert into movie(mov_name, actor, actress, year_of_release, dir_name) Values ('Zindagi Na Milegi Dobara','Hrithik Roshan','Katrina Kaif' ,2011,'Zoya Akthar');
+Insert into movie(mov_name, actor, actress, year_of_release, dir_name) Values ('Barfi','Ranbir Kapoor','Priyanka Chopra' ,2012,'Anurag Basu');
+
+Select * From movie;
+Select * From movie where year_of_release=2019;
+Select mov_name,dir_name From movie ;
